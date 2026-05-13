@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>675 Church St SE – Cleveland, TN 37311 | For Sale By Owner</title>
+  <meta name="description" content="Charming 2BR/1BA bungalow in Cleveland, TN. 970 sq ft, built 1910. For sale by owner — $199,000. Covered porch, rear deck, fenced yard, carport, workshop." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:    #b83228;
+      --dark:   #1a1a1a;
+      --mid:    #4a4a4a;
+      --light:  #7a7a7a;
+      --cream:  #f9f6f1;
+      --white:  #ffffff;
+      --border: #e4e0d9;
+      --serif:  'Playfair Display', Georgia, serif;
+      --sans:   'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ─────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    nav .address {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    nav .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--mid);
+      text-decoration: none;
+    }
+    nav .nav-links a:hover { color: var(--red); }
+
+    /* ── HERO ────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 70vh;
+      min-height: 420px;
+      overflow: hidden;
+      background: var(--dark);
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.88;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.65) 100%);
+    }
+    .hero-content {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      right: 48px;
+      color: var(--white);
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+    }
+    .hero-content h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .hero-meta {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* ── QUICK STATS ─────────────────────────────── */
+    .stats-bar {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 48px;
+      display: flex;
+      gap: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 32px;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-value {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--dark);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--light);
+      margin-top: 4px;
+    }
+
+    /* ── LAYOUT ──────────────────────────────────── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    .section-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    /* ── ABOUT ───────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 56px;
+      align-items: start;
+    }
+    .about-body p {
+      font-size: 1.05rem;
+      color: var(--mid);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .notice-box {
+      background: #fff8e1;
+      border-left: 3px solid #f0a500;
+      padding: 14px 18px;
+      margin-top: 16px;
+      border-radius: 0 4px 4px 0;
+    }
+    .notice-box p {
+      font-size: 0.88rem;
+      color: #7a5c00;
+      margin-bottom: 0;
+    }
+
+    .details-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px;
+    }
+    .details-card h3 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+    }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-row .key { color: var(--light); }
+    .detail-row .val { font-weight: 500; text-align: right; }
+
+    /* ── GALLERY ─────────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .gallery-grid .featured {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .gallery-thumb {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--border);
+      aspect-ratio: 4/3;
+    }
+    .gallery-grid .featured .gallery-thumb {
+      aspect-ratio: unset;
+      height: 100%;
+    }
+    .gallery-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+    .gallery-thumb:hover img { transform: scale(1.04); }
+    .gallery-thumb .thumb-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.55);
+      color: var(--white);
+      font-size: 0.72rem;
+      padding: 6px 10px;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .gallery-thumb:hover .thumb-label { opacity: 1; }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-inner {
+      position: relative;
+      max-width: 90vw;
+      max-height: 88vh;
+    }
+    .lightbox-inner img {
+      max-width: 90vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 2px;
+    }
+    .lightbox-caption {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+    }
+    .lightbox-close {
+      position: fixed;
+      top: 20px;
+      right: 28px;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+      opacity: 0.8;
+    }
+    .lightbox-close:hover { opacity: 1; }
+    .lightbox-nav {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2.5rem;
+      cursor: pointer;
+      padding: 16px;
+      opacity: 0.7;
+      line-height: 1;
+    }
+    .lightbox-nav:hover { opacity: 1; }
+    .lightbox-prev { left: 16px; }
+    .lightbox-next { right: 16px; }
+
+    /* ── FEATURES ────────────────────────────────── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .feature-group h3 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .feature-group ul {
+      list-style: none;
+    }
+    .feature-group ul li {
+      font-size: 0.88rem;
+      color: var(--mid);
+      padding: 5px 0;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .feature-group ul li::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      position: relative;
+      top: -1px;
+    }
+
+    /* ── LOCATION ────────────────────────────────── */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .map-frame {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .nearby-list {
+      list-style: none;
+      margin-top: 16px;
+    }
+    .nearby-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--mid);
+    }
+    .nearby-list li:last-child { border-bottom: none; }
+    .nearby-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── LISTINGS ────────────────────────────────── */
+    .listing-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .listing-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--dark);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .listing-link:hover {
+      border-color: var(--red);
+      background: var(--cream);
+    }
+    .listing-link svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* ── AGENT COMMISSION ────────────────────────── */
+    .commission-box {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      background: var(--cream);
+    }
+    .commission-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .commission-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: white;
+    }
+    .commission-body h3 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+    .commission-body p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+
+    /* ── CONTACT ─────────────────────────────────── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon svg { width: 18px; height: 18px; stroke: var(--red); fill: none; stroke-width: 2; }
+    .contact-item-body { padding-top: 2px; }
+    .contact-item-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--light); margin-bottom: 2px; }
+    .contact-item-value a { color: var(--dark); text-decoration: none; font-weight: 500; }
+    .contact-item-value a:hover { color: var(--red); }
+    .contact-item-value { font-weight: 500; }
+
+    .builder-note {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px;
+    }
+    .builder-note h3 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .builder-note p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+    .builder-note a {
+      color: var(--red);
+      font-weight: 500;
+    }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 768px) {
+      nav .nav-links { display: none; }
+      .hero-content { left: 24px; right: 24px; bottom: 24px; }
+      .stats-bar { padding: 12px 16px; }
+      .stat-item { padding: 8px 16px; }
+      .container { padding: 0 16px; }
+      section { padding: 40px 0; }
+      .about-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid .featured { grid-column: span 2; grid-row: span 1; }
+      .gallery-grid .featured .gallery-thumb { aspect-ratio: 4/3; }
+      .features-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-grid .featured { grid-column: span 1; }
+      .features-grid { grid-template-columns: 1fr; }
+      .stat-item { padding: 8px 12px; }
+      .stat-value { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="address">675 Church St SE · Cleveland, TN</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Photos</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="photos/1-221faec4-cc3d-4ff2-ab66-42d2c1cc6bfa.png" alt="675 Church St SE – Front Exterior" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">For Sale By Owner</span>
+    <h1>675 Church St SE<br>Cleveland, TN 37311</h1>
+    <div class="hero-meta" style="margin-bottom:8px;">
+      <span style="font-size:1.5rem; font-family:'Playfair Display',serif; font-weight:600; letter-spacing:0.01em;">$199,000</span>
+    </div>
+    <div class="hero-meta">
+      <span>2 Bedrooms</span>
+      <span>·</span>
+      <span>1 Bathroom</span>
+      <span>·</span>
+      <span>~970 Sq Ft</span>
+      <span>·</span>
+      <span>Built 1910</span>
+      <span>·</span>
+      <span>6,534 Sq Ft Lot</span>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK STATS -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-value">2 / 1</span>
+    <span class="stat-label">Bed / Bath</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value">~970</span>
+    <span class="stat-label">Sq Ft</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value">6,534</span>
+    <span class="stat-label">Lot (Sq Ft)</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value">1910</span>
+    <span class="stat-label">Year Built</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value">$199,000</span>
+    <span class="stat-label">Asking Price</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-value">FSBO</span>
+    <span class="stat-label">Sale Type</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-body">
+        <div class="section-label">About This Home</div>
+        <h2 class="section-title">Charming 1910 Bungalow with Character</h2>
+        <p>
+          Step into the warmth of this well-loved bungalow on Church Street — a home that wears its 115-year history proudly while offering practical, everyday comfort. High ceilings and a bright, open layout fill every room with natural light, creating an inviting feel the moment you walk through the door.
+        </p>
+        <p>
+          The kitchen flows into a dedicated eat-in dining area and connects directly to a full laundry room, adding the kind of convenience that makes daily life easy. The tall attic offers genuine potential as a loft, art studio, home office, or extra sleeping space.
+        </p>
+        <p>
+          Outside, a covered front porch sets the tone for quiet mornings, while the rear deck opens onto a fully fenced yard with large mature trees — perfect for pets, gardening, or weekend cookouts. A carport and a large detached workshop/shed round out the lot. The red matching shed in the backyard is a charming touch that ties everything together.
+        </p>
+        <div class="notice-box">
+          <p><strong>Availability note:</strong> The home is currently occupied and will be available after <strong>July 10, 2026</strong>. Viewings can be arranged by appointment.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="details-card">
+          <h3>Property Details</h3>
+          <div class="detail-row"><span class="key">Address</span><span class="val">675 Church St SE</span></div>
+          <div class="detail-row"><span class="key">City / State</span><span class="val">Cleveland, TN 37311</span></div>
+          <div class="detail-row"><span class="key">Bedrooms</span><span class="val">2</span></div>
+          <div class="detail-row"><span class="key">Bathrooms</span><span class="val">1</span></div>
+          <div class="detail-row"><span class="key">Living Area</span><span class="val">~970 sq ft</span></div>
+          <div class="detail-row"><span class="key">Lot Size</span><span class="val">6,534 sq ft</span></div>
+          <div class="detail-row"><span class="key">Year Built</span><span class="val">1910</span></div>
+          <div class="detail-row"><span class="key">Heating / Cooling</span><span class="val">Central Heat &amp; Air</span></div>
+          <div class="detail-row"><span class="key">Utilities</span><span class="val">Natural Gas, High-Speed Internet</span></div>
+          <div class="detail-row"><span class="key">Attic</span><span class="val">Tall — loft / studio potential</span></div>
+          <div class="detail-row"><span class="key">Available</span><span class="val">After July 10, 2026</span></div>
+          <div class="detail-row"><span class="key">Asking Price</span><span class="val">$199,000</span></div>
+          <div class="detail-row"><span class="key">Sale Type</span><span class="val">For Sale By Owner</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-label">Photo Tour</div>
+    <h2 class="section-title">Take a Look Inside</h2>
+
+    <div class="gallery-grid">
+      <div class="featured">
+        <div class="gallery-thumb" onclick="openLightbox(0)">
+          <img src="photos/1-221faec4-cc3d-4ff2-ab66-42d2c1cc6bfa.png" alt="Front Exterior" loading="lazy" />
+          <div class="thumb-label">Front Exterior</div>
+        </div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(1)">
+        <img src="photos/14-09a1434c-ae6e-492c-86c9-b123f2c20fa8.png" alt="Living Room" loading="lazy" />
+        <div class="thumb-label">Living Room</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(2)">
+        <img src="photos/13-6b8b9349-19ca-4484-8338-bea6f8c06e47.png" alt="Living Room" loading="lazy" />
+        <div class="thumb-label">Living Room</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(3)">
+        <img src="photos/15-0c50646b-c94d-495e-946a-c65e9f8e36d0.png" alt="Kitchen" loading="lazy" />
+        <div class="thumb-label">Kitchen</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(4)">
+        <img src="photos/7-2b21eebc-3c04-4e69-a3eb-370bf6c9ad47.png" alt="Kitchen / Dining" loading="lazy" />
+        <div class="thumb-label">Kitchen / Dining</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(5)">
+        <img src="photos/9-c0a6b98d-23ed-4e6b-ae91-5759d6544e23.png" alt="Master Bedroom" loading="lazy" />
+        <div class="thumb-label">Master Bedroom</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(6)">
+        <img src="photos/10-fed35403-3e6e-4332-ba6a-f768ab81912a.png" alt="Master Bedroom" loading="lazy" />
+        <div class="thumb-label">Master Bedroom</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(7)">
+        <img src="photos/5-6b789590-bde5-40c8-811e-caead58dcfcd.png" alt="Bedroom 2" loading="lazy" />
+        <div class="thumb-label">Bedroom 2</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(8)">
+        <img src="photos/11-d34aaa60-dd5d-4fbb-9aa2-a860679bb056.png" alt="Bedroom 3" loading="lazy" />
+        <div class="thumb-label">Bedroom 3</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(9)">
+        <img src="photos/16-4d26126d-86cb-4088-89fc-a39681196d2b.png" alt="Bathroom" loading="lazy" />
+        <div class="thumb-label">Bathroom</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(10)">
+        <img src="photos/4-e65ac0fa-ba18-4c1e-885b-1a88620038d9.png" alt="Laundry Room" loading="lazy" />
+        <div class="thumb-label">Laundry Room</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(11)">
+        <img src="photos/6-dbebb00c-421a-42e3-a8bf-b3b0a351e2e5.png" alt="Hallway" loading="lazy" />
+        <div class="thumb-label">Hallway</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(12)">
+        <img src="photos/3-4ac26040-7d8b-496b-8126-ef19e8eb9daa.png" alt="Rear Deck" loading="lazy" />
+        <div class="thumb-label">Rear Deck</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(13)">
+        <img src="photos/18-d13d5f0a-9b78-476c-96b5-931c735e6a25.png" alt="Deck" loading="lazy" />
+        <div class="thumb-label">Deck</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(14)">
+        <img src="photos/17-b4dfe2ad-9a55-4812-9319-a1351cbd9592.png" alt="Backyard" loading="lazy" />
+        <div class="thumb-label">Backyard &amp; Workshop</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(15)">
+        <img src="photos/2-bfd4269f-6509-4f3c-b5ab-43356376191d.png" alt="Rear Exterior" loading="lazy" />
+        <div class="thumb-label">Rear Exterior</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOnBackdrop(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">&#215;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="shiftLightbox(-1)">&#8249;</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+  <button class="lightbox-nav lightbox-next" onclick="shiftLightbox(1)">&#8250;</button>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-label">What's Included</div>
+    <h2 class="section-title">Features &amp; Highlights</h2>
+
+    <div class="features-grid">
+      <div class="feature-group">
+        <h3>Interior</h3>
+        <ul>
+          <li>High ceilings throughout</li>
+          <li>Bright, open floor plan</li>
+          <li>Eat-in kitchen</li>
+          <li>Dedicated laundry room</li>
+          <li>Tall attic — loft/studio potential</li>
+          <li>Crown molding</li>
+          <li>Hardwood floors (living areas)</li>
+          <li>Carpet in bedrooms</li>
+        </ul>
+      </div>
+      <div class="feature-group">
+        <h3>Exterior</h3>
+        <ul>
+          <li>Covered front porch</li>
+          <li>Large rear deck</li>
+          <li>Fully fenced yard</li>
+          <li>Carport</li>
+          <li>Large detached workshop/shed</li>
+          <li>Mature shade trees</li>
+          <li>Red matching barn-style shed</li>
+        </ul>
+      </div>
+      <div class="feature-group">
+        <h3>Systems &amp; Utilities</h3>
+        <ul>
+          <li>Central heat &amp; air</li>
+          <li>Natural gas</li>
+          <li>High-speed internet available</li>
+          <li>Stainless steel appliances</li>
+          <li>Dishwasher</li>
+          <li>Washer &amp; dryer included</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <div class="section-label">Location</div>
+    <h2 class="section-title">Cleveland, TN — Conveniently Located</h2>
+
+    <div class="location-grid">
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=675+Church+St+SE,+Cleveland,+TN+37311&output=embed"
+          title="Map of 675 Church St SE, Cleveland TN"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div>
+        <p style="font-size:0.95rem; color:var(--mid); margin-bottom:20px; line-height:1.7;">
+          Tucked into a quiet residential street in Cleveland, TN, this home puts you within easy reach of daily conveniences, cultural landmarks, and natural beauty.
+        </p>
+        <ul class="nearby-list">
+          <li><span class="nearby-dot"></span>Downtown Cleveland — minutes away</li>
+          <li><span class="nearby-dot"></span>Lee University — nearby</li>
+          <li><span class="nearby-dot"></span>The Woolen Mill — walking distance</li>
+          <li><span class="nearby-dot"></span>Nearby wedding venue</li>
+          <li><span class="nearby-dot"></span>Local shops, restaurants &amp; services</li>
+          <li><span class="nearby-dot"></span>Easy access to I-75</li>
+          <li><span class="nearby-dot"></span>Chattanooga — ~35 minutes south</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTINGS -->
+<section id="listings">
+  <div class="container">
+    <div class="section-label">See It On</div>
+    <h2 class="section-title">External Listings</h2>
+    <p style="font-size:0.95rem; color:var(--mid); max-width:540px;">
+      This property is listed on multiple platforms. View full MLS-style details, contact forms, and additional information on either platform below.
+    </p>
+
+    <div class="listing-links">
+      <a class="listing-link" href="https://www.beycome.com/675-Church-St-Se-Cleveland-TN-37311/BEYC17096055" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        View on Beycome
+      </a>
+      <a class="listing-link" href="https://www.facebook.com/share/1EUVFQfrfV/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        View on Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMISSION -->
+<section id="commission">
+  <div class="container">
+    <div class="section-label">Buyer's Agent</div>
+    <h2 class="section-title" style="margin-bottom:24px;">Agent Representation Welcome</h2>
+
+    <div class="commission-box">
+      <div class="commission-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="commission-body">
+        <h3>2% Buyer's Agent Commission Offered</h3>
+        <p>
+          While I am selling this home myself and do not require listing representation, I am happy to work with a buyer's agent.
+          If you are a licensed real estate agent bringing a qualified buyer, a <strong>2% commission</strong> will be offered at closing.
+          Please contact me directly to discuss terms and arrange a showing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact the Owner</h2>
+        <p style="font-size:0.95rem; color:var(--mid); margin-bottom:28px; line-height:1.7;">
+          Have questions or want to schedule a showing? Reach out directly — I'm happy to answer any questions about the property.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value"><a href="tel:+14232503143">(423) 250-3143</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value"><a href="mailto:xaver@xaverpinero.com">xaver@xaverpinero.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Website</div>
+              <div class="contact-item-value"><a href="https://www.xaverpinero.com/" target="_blank" rel="noopener">xaverpinero.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="builder-note">
+        <h3>Want a Website Like This?</h3>
+        <p>
+          This listing site was built as a custom, fast-loading real estate landing page — no templates, no subscriptions, no monthly fees. Just a clean, professional page that tells the story of a home.
+        </p>
+        <p>
+          If you're selling a property and would like a similar site created for your listing, I'd be glad to help. Reach out via the contact info above or visit
+          <a href="https://www.xaverpinero.com/" target="_blank" rel="noopener">xaverpinero.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>675 Church St SE &middot; Cleveland, TN 37311</p>
+  <p style="margin-top:6px;">For Sale By Owner &middot; (423) 250-3143 &middot; <a href="mailto:xaver@xaverpinero.com">xaver@xaverpinero.com</a></p>
+  <p style="margin-top:12px; font-size:0.72rem; opacity:0.6;">All information is believed to be accurate but is not guaranteed. Buyer to verify all facts.</p>
+</footer>
+
+<script>
+  const photos = [
+    { src: 'photos/1-221faec4-cc3d-4ff2-ab66-42d2c1cc6bfa.png',  caption: 'Front Exterior' },
+    { src: 'photos/14-09a1434c-ae6e-492c-86c9-b123f2c20fa8.png', caption: 'Living Room' },
+    { src: 'photos/13-6b8b9349-19ca-4484-8338-bea6f8c06e47.png', caption: 'Living Room' },
+    { src: 'photos/15-0c50646b-c94d-495e-946a-c65e9f8e36d0.png', caption: 'Kitchen' },
+    { src: 'photos/7-2b21eebc-3c04-4e69-a3eb-370bf6c9ad47.png',  caption: 'Kitchen / Dining Area' },
+    { src: 'photos/9-c0a6b98d-23ed-4e6b-ae91-5759d6544e23.png',  caption: 'Master Bedroom' },
+    { src: 'photos/10-fed35403-3e6e-4332-ba6a-f768ab81912a.png', caption: 'Master Bedroom' },
+    { src: 'photos/5-6b789590-bde5-40c8-811e-caead58dcfcd.png',  caption: 'Bedroom 2' },
+    { src: 'photos/11-d34aaa60-dd5d-4fbb-9aa2-a860679bb056.png', caption: 'Bedroom 3' },
+    { src: 'photos/16-4d26126d-86cb-4088-89fc-a39681196d2b.png', caption: 'Bathroom' },
+    { src: 'photos/4-e65ac0fa-ba18-4c1e-885b-1a88620038d9.png',  caption: 'Laundry Room' },
+    { src: 'photos/6-dbebb00c-421a-42e3-a8bf-b3b0a351e2e5.png',  caption: 'Hallway' },
+    { src: 'photos/3-4ac26040-7d8b-496b-8126-ef19e8eb9daa.png',  caption: 'Rear Deck' },
+    { src: 'photos/18-d13d5f0a-9b78-476c-96b5-931c735e6a25.png', caption: 'Deck' },
+    { src: 'photos/17-b4dfe2ad-9a55-4812-9319-a1351cbd9592.png', caption: 'Backyard & Workshop' },
+    { src: 'photos/2-bfd4269f-6509-4f3c-b5ab-43356376191d.png',  caption: 'Rear Exterior' },
+  ];
+
+  let current = 0;
+
+  function openLightbox(idx) {
+    current = idx;
+    updateLightbox();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function closeLightboxOnBackdrop(e) {
+    if (e.target === document.getElementById('lightbox')) closeLightbox();
+  }
+
+  function shiftLightbox(dir) {
+    current = (current + dir + photos.length) % photos.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    document.getElementById('lightbox-img').src = photos[current].src;
+    document.getElementById('lightbox-img').alt = photos[current].caption;
+    document.getElementById('lightbox-caption').textContent = photos[current].caption + '  (' + (current+1) + ' / ' + photos.length + ')';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('lightbox');
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') shiftLightbox(-1);
+    if (e.key === 'ArrowRight') shiftLightbox(1);
+  });
+</script>
+</body>
+</html>

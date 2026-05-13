@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code – 675 Church St SE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red: #b83228;
+      --dark: #1a1a1a;
+      --mid: #4a4a4a;
+      --border: #e4e0d9;
+      --cream: #f9f6f1;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #f0ede8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      gap: 32px;
+    }
+    .instructions {
+      max-width: 560px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 24px;
+      font-size: 0.85rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+    .instructions strong { color: var(--dark); }
+    .instructions h2 { font-size: 1rem; margin-bottom: 10px; color: var(--dark); }
+    .instructions ol { padding-left: 20px; margin-top: 8px; }
+    .instructions ol li { margin-bottom: 6px; }
+
+    /* ── CARD ─────────────────────────────────── */
+    .card {
+      width: 560px;
+      background: white;
+      border: 2px solid var(--dark);
+      border-radius: 8px;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .card-header {
+      background: var(--red);
+      color: white;
+      padding: 20px 28px 16px;
+    }
+    .card-header .tag {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+    .card-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .card-header .subtitle {
+      font-size: 0.8rem;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    .card-body {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0;
+    }
+
+    .card-left {
+      padding: 24px 28px;
+      border-right: 1px solid var(--border);
+    }
+    .card-left .scan-cta {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .card-left .scan-sub {
+      font-size: 0.78rem;
+      color: var(--mid);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .facts {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .fact {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8rem;
+    }
+    .fact:last-child { border-bottom: none; }
+    .fact .fk { color: var(--mid); }
+    .fact .fv { font-weight: 500; }
+
+    .card-right {
+      padding: 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 190px;
+    }
+    .qr-wrapper {
+      width: 148px;
+      height: 148px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qr-wrapper img {
+      width: 148px;
+      height: 148px;
+      display: block;
+    }
+    .qr-label {
+      font-size: 0.68rem;
+      text-align: center;
+      color: var(--mid);
+      line-height: 1.4;
+    }
+
+    .card-footer {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      padding: 12px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .card-footer .contact-line {
+      font-size: 0.78rem;
+      color: var(--mid);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card-footer .contact-line span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .card-footer .fsbo-badge {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      font-weight: 600;
+      border: 1px solid var(--red);
+      padding: 3px 8px;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    /* ── URL UPDATER ────────────────────────────── */
+    .url-form {
+      max-width: 560px;
+      width: 100%;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 24px;
+    }
+    .url-form h2 { font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; }
+    .url-form label { font-size: 0.8rem; color: var(--mid); display: block; margin-bottom: 6px; }
+    .url-form input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-family: monospace;
+      margin-bottom: 10px;
+    }
+    .url-form button {
+      background: var(--red);
+      color: white;
+      border: none;
+      padding: 9px 20px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .url-form button:hover { background: #9e2b22; }
+    .url-form .url-note {
+      font-size: 0.75rem;
+      color: var(--mid);
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    @media print {
+      body { background: white; padding: 0; justify-content: flex-start; }
+      .instructions, .url-form { display: none; }
+      .card { border: 2px solid var(--dark); page-break-inside: avoid; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="instructions">
+  <h2>How to use this QR code sign</h2>
+  <ol>
+    <li>Once your website is live and you have a URL (e.g. <em>yourdomain.com</em>), paste it in the field below and click <strong>Update QR</strong>.</li>
+    <li>The QR code will regenerate to point to your live site.</li>
+    <li>Use <strong>File → Print</strong> (or Ctrl/Cmd+P) to print this page. The instructions and this box will be hidden — only the sign prints.</li>
+    <li>For best results, print at full page or on cardstock and laminate before posting outside.</li>
+  </ol>
+</div>
+
+<div class="url-form">
+  <h2>Set Your Website URL</h2>
+  <label for="site-url">Your live website URL</label>
+  <input type="url" id="site-url" placeholder="https://your-site-url.com" />
+  <button onclick="updateQR()">Update QR Code</button>
+  <p class="url-note">
+    Don't have a URL yet? The QR code below currently points to the Beycome listing as a placeholder.
+    After you deploy the site (e.g. on Netlify or GitHub Pages), come back and update it here.
+  </p>
+</div>
+
+<!-- PRINTABLE SIGN CARD -->
+<div class="card" id="sign-card">
+  <div class="card-header">
+    <div class="tag">For Sale By Owner</div>
+    <h1>675 Church St SE<br>Cleveland, TN 37311</h1>
+    <div style="font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:600; margin: 4px 0 2px;">$199,000</div>
+    <div class="subtitle">2 Bed · 1 Bath · ~970 Sq Ft · Built 1910</div>
+  </div>
+
+  <div class="card-body">
+    <div class="card-left">
+      <div class="scan-cta">Scan to view photos &amp; details</div>
+      <div class="scan-sub">See all interior photos, property features,<br>location info, and contact details online.</div>
+
+      <div class="facts">
+        <div class="fact"><span class="fk">Asking Price</span><span class="fv">$199,000</span></div>
+        <div class="fact"><span class="fk">Bedrooms / Baths</span><span class="fv">2 BR / 1 BA</span></div>
+        <div class="fact"><span class="fk">Living Area</span><span class="fv">~970 sq ft</span></div>
+        <div class="fact"><span class="fk">Lot Size</span><span class="fv">6,534 sq ft</span></div>
+        <div class="fact"><span class="fk">Year Built</span><span class="fv">1910</span></div>
+        <div class="fact"><span class="fk">Exterior</span><span class="fv">Deck · Carport · Fenced Yard</span></div>
+        <div class="fact"><span class="fk">Workshop / Shed</span><span class="fv">Large detached</span></div>
+        <div class="fact"><span class="fk">Available After</span><span class="fv">July 10, 2026</span></div>
+      </div>
+    </div>
+
+    <div class="card-right">
+      <div class="qr-wrapper">
+        <img
+          id="qr-img"
+          src="https://api.qrserver.com/v1/create-qr-code/?size=148x148&data=https%3A%2F%2Fwww.beycome.com%2F675-Church-St-Se-Cleveland-TN-37311%2FBEYC17096055&margin=8"
+          alt="QR code"
+        />
+      </div>
+      <div class="qr-label">Scan with your<br>phone camera</div>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <div class="contact-line">
+      <span>&#128222; (423) 250-3143</span>
+      <span>&#9993; xaver@xaverpinero.com</span>
+    </div>
+    <div class="fsbo-badge">For Sale By Owner</div>
+  </div>
+</div>
+
+<script>
+  function updateQR() {
+    const url = document.getElementById('site-url').value.trim();
+    if (!url) return alert('Please enter a URL first.');
+    const encoded = encodeURIComponent(url);
+    document.getElementById('qr-img').src =
+      'https://api.qrserver.com/v1/create-qr-code/?size=148x148&data=' + encoded + '&margin=8';
+  }
+
+  document.getElementById('site-url').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') updateQR();
+  });
+</script>
+</body>
+</html>
