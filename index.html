@@ -551,6 +551,7 @@
       .container { padding: 0 16px; }
       section { padding: 40px 0; }
       .about-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      #dimensions .container > div[style*="grid"] { grid-template-columns: 1fr 1fr !important; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .gallery-grid .featured { grid-column: span 2; grid-row: span 1; }
       .gallery-grid .featured .gallery-thumb { aspect-ratio: 4/3; }
@@ -560,6 +561,7 @@
       .gallery-grid { grid-template-columns: 1fr; }
       .gallery-grid .featured { grid-column: span 1; }
       .features-grid { grid-template-columns: 1fr; }
+      #dimensions .container > div[style*="grid"] { grid-template-columns: 1fr !important; }
       .stat-item { padding: 8px 12px; }
       .stat-value { font-size: 1.3rem; }
     }
@@ -668,6 +670,8 @@
           <div class="detail-row"><span class="key">Available</span><span class="val">After July 10, 2026</span></div>
           <div class="detail-row"><span class="key">Asking Price</span><span class="val">$199,000</span></div>
           <div class="detail-row"><span class="key">Sale Type</span><span class="val">For Sale By Owner</span></div>
+          <div class="detail-row"><span class="key">Financing</span><span class="val">Previously FHA-financed</span></div>
+          <div class="detail-row"><span class="key">Title Company</span><span class="val">Realty Title — Ooltewah, TN</span></div>
         </div>
       </div>
     </div>
@@ -798,7 +802,10 @@
         <h3>Systems &amp; Utilities</h3>
         <ul>
           <li>Central heat &amp; air</li>
-          <li>Natural gas</li>
+          <li>Natural gas (Chattanooga Gas Co.)</li>
+          <li>Water, electric, sewer &amp; trash — one combined city bill</li>
+          <li>Trash pickup: Monday mornings</li>
+          <li>Large debris curbside pickup: Wednesdays</li>
           <li>High-speed internet available</li>
           <li>Stainless steel appliances</li>
           <li>Dishwasher</li>
@@ -806,6 +813,74 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ROOM DIMENSIONS -->
+<section id="dimensions">
+  <div class="container">
+    <div class="section-label">Floor Plan</div>
+    <h2 class="section-title">Room Dimensions</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Bedroom 1 (Master)</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">14 × 14 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Closet: 3 × 6 ft</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Bedroom 2</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">14 × 11 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Closet: 3 × 6 ft</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Living Room</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">15 × 14 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Hardwood floors</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Kitchen</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">20 × 12 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Eat-in, stainless appliances</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Bathroom</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">10 × 6 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Tub / shower combo</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Laundry Room</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">12 × 5 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Washer &amp; dryer included</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Back Deck</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">8 × 55 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">440 sq ft — overlooks fenced yard</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Front Porch</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">15 × 7 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Covered</div>
+      </div>
+
+      <div style="background:var(--cream); border:1px solid var(--border); border-radius:4px; padding:20px 22px;">
+        <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--red); font-weight:600; margin-bottom:6px;">Shed / Workshop</div>
+        <div style="font-family:var(--serif); font-size:1.5rem; font-weight:600; margin-bottom:4px;">12 × 16 ft</div>
+        <div style="font-size:0.8rem; color:var(--light);">Detached, barn-style</div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:16px; font-size:0.78rem; color:var(--light);">All dimensions are approximate. Buyer to verify.</p>
   </div>
 </section>
 
@@ -830,11 +905,14 @@
           Tucked into a quiet residential street in Cleveland, TN, this home puts you within easy reach of daily conveniences, cultural landmarks, and natural beauty.
         </p>
         <ul class="nearby-list">
+          <li><span class="nearby-dot"></span>Cleveland Christian Fellowship &amp; Christian School — next door</li>
+          <li><span class="nearby-dot"></span>Fire Station — directly across the street</li>
+          <li><span class="nearby-dot"></span>Police gym — across the street</li>
+          <li><span class="nearby-dot"></span>Mexican restaurant — just behind</li>
           <li><span class="nearby-dot"></span>Downtown Cleveland — minutes away</li>
           <li><span class="nearby-dot"></span>Lee University — nearby</li>
           <li><span class="nearby-dot"></span>The Woolen Mill — walking distance</li>
-          <li><span class="nearby-dot"></span>Nearby wedding venue</li>
-          <li><span class="nearby-dot"></span>Local shops, restaurants &amp; services</li>
+          <li><span class="nearby-dot"></span>Wedding venue — right next door</li>
           <li><span class="nearby-dot"></span>Easy access to I-75</li>
           <li><span class="nearby-dot"></span>Chattanooga — ~35 minutes south</li>
         </ul>
